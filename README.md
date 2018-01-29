@@ -27,11 +27,15 @@ use selection criteria that underestimates the detection of gold mines.
 
 The method consists of six steps.
 1.  Download images from the region
+    *   `scripts/download_images.py`
 2.  Convert these images to smaller images
+    *   `scripts/img2vec.py`
 3.  Extract information ('features') over these smaller regions
+    *   `scripts/img2vec.py`
 4.  Identify by hand a smaller image that shows a gold mine
 5.  Identify images whose features are most similar to the image selected in 4.
 6.  Repeat 5 with the images chosen in 5 as many times as required.
+    *   `scripts/similarity_analysis.py`
 
 We now discuss these steps in detail.
 
